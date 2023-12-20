@@ -1,0 +1,110 @@
+	* {
+		box-sizing: border-box;
+	}
+	body {
+		/*background: rgba(0, 128, 0, 0.1); /* Green background with 10% opacity */
+		background-image: url("654680.jpg");
+	}
+	h1 {
+		margin: 10px;
+		text-align: center;
+		font-family: Lucida Console;
+		font-weight: bold;
+		font-size: 155%;
+		color:#ff6347;
+	}
+	section {
+		position: relative;
+		padding: 15px;
+		width: 100%;
+	}
+	
+	div {
+		position: relative;
+		background-color: lightblue;
+		border: 1px solid black;
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: auto;
+	}
+	.s1 {
+		float: right;
+		width: 100px;
+		padding: 5px;
+		margin: 0px;
+		border: 1px solid black;
+		text-align: center;
+		font-size: 125%;
+		font-weight: bold;
+		background-color: MediumSeaGreen;
+		
+	}
+	.s2 {
+		float: right;
+		color: black;
+		width: 100px;
+		padding: 5px;
+		margin: 0px;
+		border: 1px solid black;
+		text-align: center;
+		font-size: 125%;
+		font-weight: bold;
+		background-color: Tomato;
+		
+	}
+	.s3 {
+		color: black;
+		float: right;
+		width: 100px;
+		padding: 5px;
+		margin: 0px;
+		border: 1px solid black;
+		text-align: center;
+		font-size: 125%;
+		font-weight: bold;
+		background-color: yellow;
+		
+	}
+	.content {
+		padding: 5px;
+		border: none;
+		background-color: lightblue;
+		font-family: Lucida Console;
+		color: black;
+		margin: 0px;
+		height: 180px;
+		overflow: auto; /*The overflow property specifies what happens if content overflows an element's box*/
+		clear: right;
+	}
+	
+	
+	/*desktop version - 992px and above*/
+	@media (min-width: 992px){
+		.column-lg-4 {
+			float: left;
+			width: 33.33%;
+		}
+	}
+	/*tablet version - between 768px and 991px, inclusively*/
+	@media (min-width: 768px) and (max-width: 991px){
+		.column-md-6 {
+			float: left;
+			width: 50%;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		.column-md-12 {
+			float: left;
+			width: 100%;
+			margin-left: auto;
+			margin-right: auto;
+		}
+	}
+	/*mobile version - equal to or less than 767px*/
+	@media (max-width: 767px){
+		.column-sm-12 {
+			float: left;
+			width: 100%;
+		}
+	}
